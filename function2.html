@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fizzProblem(num){
+            if(num%3==0){
+                console.log("Fizz");
+            }
+            else if(num%5==0){
+                console.log("Buzz")
+            }
+            else if(num%3 && num%5){
+                console.log("FIZZBUZZ")
+        }
+        else if(num%3 || num%5){
+                console.log("BUZZFIZZ")
+        }
+    }
+    fizzProblem(30);
+    </script>
+</body>
+</html>
