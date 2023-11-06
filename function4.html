@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculate(num1,num2){
+            let sum=num1 + num2;
+            let diff=num1 - num2;
+            let quotient=num1 % num2;
+            let product=num1 * num2;
+            if(num1>num2){
+                console.log(sum,diff,quotient,product,"num1>num2")
+            }
+          else{
+            console.log(sum,diff,quotient,product,"num2>num1")
+          }
+        }
+        calculate(10,5)
+
+</script>
+</body>
+</html>
