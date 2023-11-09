@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function square(num){
+            if(num%3==0){
+                console.log("square is",num*num);
+            }
+            else{
+                let rem = num % 3;
+  let toAdd = (3 - rem) % 3;
+  let result = num + toAdd;
+   let numAdd=result-num;
+  console.log("number to add to make it divisible by 3 is",numAdd);
+            }
+        }
+        square(9);
+    </script>
+</body>
+</html>
