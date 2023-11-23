@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function main(num,evenCall,oddCall){
+            if(num%2==0){
+                console.log(`${num} is even`);
+               return evenCall(num); 
+            }
+            else{
+                console.log(`${num} is odd`);
+               return oddCall(num); 
+            }
+        }
+        function square(num){
+            let sq = num*num;
+    console.log(`Square of ${num} is: ${sq}`);
+    return sq;
+        }
+        function cube(num){
+        const cu = num * num * num;
+    console.log(`cube of ${num} is: ${cu}`);
+    return cu;
+        }
+        main(3,square,cube);
+    </script>
+</body>
+</html>
