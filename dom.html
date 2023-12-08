@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="first-name">
+        <input type="text" id="last-name">
+        <input type="number" id="phone-number">
+        <button id="btn">Submit</button>
+    </div>
+    <table id="table1">
+        <tr>
+            <th>first name</th>
+            <th>last name </th>
+            <th>phone number</th>
+            <th></th>
+        </tr>
+    </table>
+
+    <script>
+
+        const first = document.getElementById("first-name");
+        const last = document.getElementById("last-name");
+        const phone = document.getElementById("phone-number");
+        const tab = document.getElementById("table1");
+        const butt = document.getElementById("btn");
+        butt.addEventListener("click", () => {
+            const tr = document.createElement("tr");
+            const td1 = document.createElement("td");
+            const td2 = document.createElement("td");
+            const td3 = document.createElement("td");
+
+            td1.innerText = first.value;
+            td2.innerText = last.value;
+            td3.innerText = phone.value;
+            tr.append(td1, td2, td3);
+            tab.appendChild(tr);
+        })
+
+    </script>
+</body>
+
+</html>
