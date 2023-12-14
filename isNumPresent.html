@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function isNumberPresent(arr, num) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === num) {
+      return true;
+    }
+  }
+  return false;
+}
+
+const numbersArray = [1, 2, 3, 4, 5];
+const numberToCheck = 3;
+
+const result = isNumberPresent(numbersArray, numberToCheck);
+console.log(result); 
+    </script>
+</body>
+</html>
