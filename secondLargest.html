@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function remove(arr) {
+            if (arr.length < 2) {
+                console.log(incorrect);
+            }
+            let largestIndex = arr.indexOf(Math.max(...arr));
+            let removeLarge = arr.splice(largestIndex, 1);
+           
+            const secondLargest = Math.max(...arr);
+
+            return secondLargest;
+        }
+
+        const myArray = [3, 8, 1, 6, 4, 2, 9, 7];
+        const result = remove(myArray);
+
+        console.log("Second Largest Value:", result);
+        console.log("Array after removal of the largest value:", myArray);
+    </script>
+</body>
+
+</html>
